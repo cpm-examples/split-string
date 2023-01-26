@@ -11,7 +11,15 @@ cpm install https://github.com/cpm-examples/split-string
 ```cmake
 add_subdirectory(lib/split-string)
 
-target_link_libraries(split-string)
+target_include_directories(<target>
+	PRIVATE
+		${CMAKE_CURRENT_SOURCE_DIR}/lib/split-string/include
+)
+
+target_link_libraries(<target>
+	PRIVATE
+		split-string
+)
 ```
 
 ## Example usage
