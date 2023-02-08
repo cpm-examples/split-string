@@ -1,11 +1,11 @@
-# Split-string
+# Split string
 
 A C++ library for splitting/tokenizing strings by a given delimiter
 
 ## Installation
 
 ```sh
-cpm install https://github.com/cpm-examples/split-string
+cpm install split-string
 ```
 
 ```cmake
@@ -55,7 +55,7 @@ Output:
 
 ```sh
 $ ./main
-Inital string: hello/world/!/
+Inital string: hello/world/!
 Tokens:
 hello
 world
